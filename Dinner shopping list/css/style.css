@@ -1,0 +1,81 @@
+html {
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+}
+body {
+    background-color: #3B3F45;
+}
+header {
+    color: #EB7E7E;
+    background-color: #4A4F56;
+    text-align: center;
+    padding: 1px;
+}
+main {
+    padding: 30px 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li:hover label {
+    background-color: #625E77;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.square {
+    width: 36px;
+    height: 36px;
+    background-color: #DEDEDE;
+    border: 1px solid grey;
+    display: inline-block;
+    margin-right: 10px;
+}
+label {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+label:active {
+    background-color: red !important;
+}
+input {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+input:checked + p {
+    color: rgba(255,255,255,.7);
+    text-decoration: line-through;
+}
+input:checked + label .square:after {
+    content: '+';
+    font-size: 36px;
+    color: black;
+}
+li:nth-child(odd) {
+    background-color: #88839E;
+}
+li:nth-child(even) {
+    background-color: #7A7593;
+}
+label p {
+    margin: 0;
+    display: inline-block;
+}
+p {
+    font-size: 24px;
+}
+span {
+    font-size: 16px;
+}
+span:before {
+    content: '( ';
+}
+span:after {
+    content: ' )';
+}
