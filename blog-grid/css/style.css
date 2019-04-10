@@ -1,0 +1,50 @@
+body {
+    background-color: #e2e7ec;
+}
+.container {
+    margin-top: 20px;
+}
+.panel {
+    background-color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 25px;
+}
+img {
+    width: calc(100% + 50px);
+    display: block;
+    height: auto;
+    margin: -25px -25px 25px;
+}
+.panel__text {
+    min-height: 200px;
+}
+.panel__author {
+    width: 54px;
+    height: 54px;
+    margin: 0;
+}
+.panel--big {
+    position: relative;
+    color: white;
+}
+.panel--big:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+}
+.panel--big img {
+    margin: -25px;
+}
+.panel--big .panel__text {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    min-height: 0;
+    z-index: 1;
+}
