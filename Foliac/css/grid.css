@@ -65,6 +65,21 @@
 .col-12 {
     width: 100%;
 }
+.offset-2 {
+    margin-left: calc((100% / 12) * 2 + 15px);
+}
+.offset-3 {
+    margin-left: calc((100% / 12) * 3 + 15px);
+}
 .offset-6 {
     margin-left: calc((100% / 12) * 6 + 15px);
+}
+
+.grid-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.item-1-1 {
+    grid-column: span 2;
 }
