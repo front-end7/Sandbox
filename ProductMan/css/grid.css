@@ -105,3 +105,12 @@
 .align-items-center {
     align-items: center !important;
 }
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+}
+.grid-item-2-3 {
+    grid-column: span 2;
+}
