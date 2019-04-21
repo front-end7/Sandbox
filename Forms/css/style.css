@@ -1,0 +1,85 @@
+.form-control {
+    position: relative;
+    max-width: 200px;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    top: 2px;
+    background-color: white;
+    transition: ease .3s top;
+}
+.input {
+    width: 100%;
+}
+.input:focus + .label {
+    top: -20px;
+}
+.input:valid + .label {
+    top: -20px;
+}
+.status {
+    height: 5px;
+    background-color: grey;
+}
+.input:valid + .label + .status {
+    background-color: green;
+}
+.input:invalid ~ .status {
+    background-color: red;
+}
+
+.checkInput {
+    display: none;
+}
+.checkLabel {
+    padding-left: 20px;
+    position: relative;
+    display: block;
+}
+.checkLabel:before,
+.checkLabel:after {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    top: 0;
+}
+.checkLabel:before {
+    content: '';
+    background-color: blue;
+    left: 0;
+}
+.checkLabel:after {
+    content: '+';
+    left: 3px;
+    color: white;
+    display: none;
+}
+.checkInput:checked + .checkLabel:after {
+    display: block;
+}
+
+form {
+    position: relative;
+    /* direction: rtl; */
+    /* transform: scaleX(-1); */
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.star-input {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.star-input:checked ~ label {
+    color: red;
+}
+
+.star-label:hover ~ label, .star-label:hover {
+    color: blue !important;
+}
