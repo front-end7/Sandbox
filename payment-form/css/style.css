@@ -1,0 +1,123 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    letter-spacing: -.02em;
+}
+
+.panel {
+    padding: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel__wrapper {
+    max-width: 336px;
+}
+.panel__header {
+    background-color: #f8edaf;
+    padding: 16px 23px;
+}
+.panel__name {
+    color: #6e7f7b;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+.panel__total {
+    margin: 0;
+    color: #a6a28d;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.panel__cost {
+    color: #637570;
+    font-size: 36px;
+    font-weight:400;
+    letter-spacing: -.04em;
+}
+.panel__body {
+    padding: 41px 24px 21px;
+    background-color: white;
+}
+.form {
+    color: #9eabad;
+}
+.form__label {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.form__input {
+    background-color: white;
+    border: 2px solid #bac8cb;
+    color: #727f82;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    padding: 13px 7px;
+    outline: none;
+}
+.form__input:focus {
+    border: 2px solid #82d4e7;
+}
+.form__input--select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    padding: 13px 4px;
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: right 10px top 18px;
+}
+.form__control {
+    padding-bottom: 24px;
+}
+.form__text {
+    font-size: 12px;
+    font-weight: 400;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+.form__devider {
+    height: 1px;
+    background-color: #e4e7e8;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+.btn {
+    border: none;
+    background-color: #25b86a;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    padding: 14px;
+    line-height: 1;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #2ee483;
+}
+.form__submit {
+    margin-bottom: 22px;
+}
+.form__cancel {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+}

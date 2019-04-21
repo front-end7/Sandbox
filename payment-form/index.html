@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>payment-form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="page">
+
+    <div class="panel">
+        <div class="panel__wrapper">
+            <div class="panel__header d-flex align-items-center justify-content-between">
+                <div class="panel__text">
+                    <h2 class="panel__name">Harold Finch</h2>
+                    <p class="panel__total">Your Total</p>
+                </div>
+                <div class="panel__cost">$88</div>
+            </div>
+            <div class="panel__body">
+                <form action="#" method="get" class="form">
+                    <div class="form__control">
+                        <label for="card" class="form__label">Credit card number</label>
+                        <input data-mask="0000 0000 0000 0000" type="text" name="card" id="card" value="4321" class="form__input">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="month">Expiration date</label>
+                        <div class="row">
+                            <div class="col-8">
+                                <select class="form__input form__input--select" name="month" id="month">
+                                    <option value="" disabled selected>Month</option>
+                                    <option value="">Jun</option>
+                                    <option value="">July</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <select class="form__input form__input--select" name="year" id="year">
+                                    <option value="" disabled selected>Year</option>
+                                    <option value="">2022</option>
+                                    <option value="">2023</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label" for="cvv">CVV</label>
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <input class="form__input" type="password" data-mask="0000" name="cvv" id="cvv">
+                            </div>
+                            <div class="col-8">
+                                <div class="form__text">
+                                    3 or 4 digits - <a href="#">view example</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__devider"></div>
+                    <div class="form__submit">
+                        <button type="submit" class="btn">Pay</button>
+                    </div>
+                    <div class="form__cancel">
+                        <a href="http://">Cancel order</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="./plugins/jquery.mask.min.js"></script>
+
+</body>
+</html>
