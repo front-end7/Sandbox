@@ -1,0 +1,41 @@
+.panel {
+    background-color: grey;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 320px) {
+    .col-sm-12 {
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .panel {
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+    .panel {
+        background-color: red;
+    }
+}
+
+@media (orientation: portrait) {
+    .panel {
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) {
+    .panel {
+        font-size: 30px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3){
+    .panel {
+        color: blue;
+    }
+}
