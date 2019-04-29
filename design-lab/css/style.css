@@ -1,0 +1,54 @@
+.svg {
+    /* display: none; */
+}
+html {
+    font-family: 'Lato', sans-serif;
+}
+body {
+    font-family: inherit;
+    background-image: url(../design-lab.jpg);
+    background-position: top;
+}
+
+.header {
+    background: url(../img/bg--header.jpg) center;
+    background-position: center;
+    min-height: 1072px;
+    text-align: center;
+    padding-top: 285px;
+    color: white;
+}
+.header__title {
+    margin-top: 77px;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+.header__text {
+    letter-spacing: .06em;
+    font-size: 15px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+.header__scroll {
+    padding-top: 221px;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  .icon-logo {
+    width: 67px;
+    height: 70px;
+  }
+  .icon-icon--scroll {
+      width: 22px;
+      height: 38px;
+  }
