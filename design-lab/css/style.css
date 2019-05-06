@@ -1,9 +1,11 @@
 .svg {
     /* display: none; */
 }
+
 html {
     font-family: 'Lato', sans-serif;
 }
+
 body {
     font-family: inherit;
     background-image: url(../design-lab.jpg);
@@ -13,11 +15,13 @@ body {
 .header {
     background: url(../img/bg--header.jpg) center;
     background-position: center;
+    background-size: cover;
     min-height: 1072px;
     text-align: center;
     padding-top: 285px;
     color: white;
 }
+
 .header__title {
     margin-top: 77px;
     font-size: 54px;
@@ -26,12 +30,14 @@ body {
     text-transform: uppercase;
     margin-bottom: 33px;
 }
+
 .header__text {
     letter-spacing: .06em;
     font-size: 15px;
     line-height: 29px;
     text-transform: uppercase;
 }
+
 .header__scroll {
     padding-top: 221px;
 }
@@ -43,12 +49,75 @@ body {
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-  }
-  .icon-logo {
+}
+
+.icon-logo {
     width: 67px;
     height: 70px;
-  }
-  .icon-icon--scroll {
-      width: 22px;
-      height: 38px;
-  }
+}
+
+.icon-icon--scroll {
+    width: 22px;
+    height: 38px;
+}
+.section {
+    color: #3c3c3c;
+    padding: 60px 0;
+}
+.section--about {
+    background-color: white;
+}
+.section--white {
+    color: white;
+}
+.section--services {
+    background-image: url(../img/bg--services.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 27px;
+    padding-bottom: 16px;
+}
+.box {
+    margin: 100px 0;
+    border: 2px solid currentColor;
+    border-top: none;
+    text-align: center;
+    padding-top: 1px;
+}
+h2 {
+    color: currentColor;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .17em;
+}
+p {
+    color: currentColor;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: .01em;
+    /* margin: 24px 0; */
+}
+.box h2 {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+.box p {
+    padding: 0 180px;
+}
+.box h2:before, .box h2:after {
+    flex-grow: 1;
+    height: 2px;
+    background-color: currentColor;
+    content: '';
+    display: block;
+}
+.box h2:before {
+    margin-right: 100px;
+}
+.box h2:after {
+    margin-left: 100px;
+}

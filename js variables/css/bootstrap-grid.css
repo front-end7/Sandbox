@@ -37,13 +37,13 @@ html {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 840px;
+    max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 930px;
+    max-width: 1140px;
   }
 }
 
