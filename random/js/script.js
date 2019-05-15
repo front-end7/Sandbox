@@ -67,10 +67,13 @@ function Random() {
 // } while (confirm() != true);
 
 function ucFirst(_str) {
-    var firstChar = _str.charAt(0); // берем первый символ
-    var firstCharUpperCase = firstChar.toUpperCase(); // возводим первый символ в верхний регистр
-    var replaceFirstChar = _str.replace(firstChar, firstCharUpperCase); // заменяем первый символ на новый
-    return replaceFirstChar; // отправляем на гитхаб
+    var первыйСимвол = _str.charAt(0); // берем первый символ
+    var первыйСимволВВерхнемРегистре = первыйСимвол.toUpperCase(); // возводим первый символ в верхний регистр
+    /**
+     * @method replace где мы меняем.(что меняем, на что мы меняем)
+     */
+    var заменитьПервыйСимвол = _str.replace(первыйСимвол, первыйСимволВВерхнемРегистре); // заменяем первый символ на новый
+    return заменитьПервыйСимвол; // отправляем на гитхаб
 }
 
-console.log(ucFirst("Пасилий"));
+console.log(ucFirst("расилий"));
