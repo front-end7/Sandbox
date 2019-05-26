@@ -9,7 +9,7 @@ function load() {
     
     if (text != null) {
 
-        var textArray = JSON.parse(text);
+        textArray = JSON.parse(text);
         
         for (let i = 0; i < textArray.length; i++) {
             
@@ -55,6 +55,8 @@ var panels = document.getElementById('panels');
 
 function makePanel(_text) {
     
+    // var date = new Date;
+
     panels.innerHTML += `
         <div class="panel">
             ${_text}
