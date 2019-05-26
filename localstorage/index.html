@@ -12,14 +12,21 @@
 </head>
 <body>
 
-    <div id="app">
+    <div id="app" class="container">
+
+        <div id="panels"></div>
+
+        <hr>
 
         <textarea id="message"></textarea>
+        <button onclick="submit()">submit</button>
+
+        <hr>
 
         <button onclick="save()">save</button>
         <button onclick="load()">load</button>
-        <button onclick="">clear</button>
-
+        <button onclick="clearData()">clear</button>
+        <br>
         <div id="log"></div>
 
     </div>

@@ -1,15 +1,64 @@
 // scripts goes here
+var log = document.getElementById('log');
+
+var textArray = [];
 
 function load() {
+
     var text = localStorage.getItem('message');
-    document.getElementById('message').innerText = text;
-    console.log('data loaded')
+    
+    if (text != null) {
+
+        var textArray = JSON.parse(text);
+        
+        for (let i = 0; i < textArray.length; i++) {
+            
+            makePanel(textArray[i]);
+            
+        }
+
+        log.innerText += 'data loaded\n';
+    }
+    else {
+        log.innerText += 'data empty\n';
+    }
+
+}
+
+function submit() {
+    
+    var text = document.getElementById('message').value;
+
+    textArray.push(text);
+
+    makePanel(text);
+
+    document.getElementById('message').value = '';
+
 }
 
 function save() {
-    var text = document.getElementById('message').value;
-    document.getElementById('message').value = '';
-    localStorage.setItem('message', text);
-    console.log('data saved: ', text)
+
+    var buf = JSON.stringify(textArray);
+
+    localStorage.setItem('message', buf);
+
+    log.innerText += 'data seved:'+ buf + '\n';
 }
 
+function clearData() {
+    localStorage.removeItem('message');
+    log.innerText += 'data cleared\n';
+}
+
+var panels = document.getElementById('panels');
+
+function makePanel(_text) {
+    
+    panels.innerHTML += `
+        <div class="panel">
+            ${_text}
+        </div>
+    `;
+
+}
