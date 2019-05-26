@@ -91,3 +91,30 @@ for (let i = 0; i < rows; i++) {
 buf += '</table>';
 
 document.write(buf);
+
+
+var table1 = '<table>';
+
+var col = 255;
+var row = 255;
+
+for (let i = 1; i < row; i++) {
+    
+    table1 += '<tr>'
+    
+    for (let j = 1; j < col; j++) {
+        
+        table1 += `<td>${j}</td>`;
+        table1 += '<td>*</td>';
+        table1 += `<td>${i}</td>`;
+        table1 += '<td>=</td>';
+        table1 += `<td>${i * j}</td>`;
+        table1 += '<td>&nbsp</td>'
+        
+    }
+
+    table1 += '</tr>'
+}
+
+table11 = '</table>'
+document.write(table1);
