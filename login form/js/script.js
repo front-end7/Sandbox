@@ -5,17 +5,23 @@ var login = document.getElementById('login');
 var pass = document.getElementById('pass');
 var submit = document.getElementById('submit');
 
-var admin = "god";
-var correctPass = "123";
+var users = [
+    {
+        login: "admin",
+        pass: "123"
+    },
+    {
+        login: "vasya",
+        pass: "qwe123"
+    },
+    {
+        login: "user",
+        pass: "398kPr0Z"
+    }
+];
 
 submit.addEventListener('click', Check);
 
 function Check() {
-    log.innerHTML += "logining...<br>";
-    if (login.value == admin) {
-        log.innerHTML += "login is correct<Br>";
-    }
-    if (pass.value == correctPass) {
-        log.innerHTML += "password is correct<br>";
-    }
+    
 }
