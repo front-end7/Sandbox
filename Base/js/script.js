@@ -1,1 +1,3 @@
-// scripts goes here
+$(document).ready(function () {
+    // js code goes here
+})
