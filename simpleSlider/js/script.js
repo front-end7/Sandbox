@@ -1,9 +1,18 @@
 $(document).ready(function () {
+
+    $('#slider').prepend('<div id="track"></div>');
+
     // получаем общую ширину слайдов для трека
     var trackWidth = 0;
     $('img').each(function () {
         trackWidth += $(this).width();
+        $('#track').append($(this));
     });
+
+    $('#slider').prepend(`
+        <ul id="dots">
+        </ul>
+    `)
 
     $('#slider').prepend(`
         <button id="prev">prev</button>
