@@ -4,6 +4,12 @@ $(document).ready(function () {
     $('img').each(function () {
         trackWidth += $(this).width();
     });
+
+    $('#slider').prepend(`
+        <button id="prev">prev</button>
+        <button id="next">next</button>
+    `)
+
     // присваиваем ширину треку
     $('#track').css('width', `${trackWidth}px`);
     // по умолчанию показываем первый слайд
@@ -27,6 +33,20 @@ $(document).ready(function () {
         $('#track').css('transform', `translateX(-${offset}px)`);
     }
 
+    function MakeDots() {
+        let buf = '';
+        for (let i = 0; i < $('img').length; i++) {
+            if (i == currentPosition) {
+                buf += '<li class="active"></li>'
+            }
+            else {
+                buf += '<li></li>'
+            }
+        }
+
+        $('#dots').append(buf);
+    }
+
     function UpdateDots() {
         $('#dots li').each(function () {
             $(this).removeClass('active');
@@ -35,6 +55,8 @@ $(document).ready(function () {
             }
         })
     }
+
+    MakeDots();
     // обработчик следующего слайда
     $('#next').on('click', function () {
         currentPosition = currentPosition + 1;
