@@ -1,20 +1,19 @@
 $(document).ready(function () {
 
-    function Slider(selector, obj = {
+    $.fn.simpleSlider = function ( options ){
+        let settings = $.extend( {
             dots: false,
             arrows: false
-            }
-        )
-    {
-        let slider = selector,
-            dots = obj.dots,
-            arrows = obj.arrows,
+            }, options);
+        let slider = this,
+            dots = settings.dots,
+            arrows = settings.arrows,
             trackClass = '.fe7slider__track',
             dotsClass = '.fe7slider__dots',
             currentPosition = 0;
         
-        if (obj.currentPosition) {
-            currentPosition = obj.currentPosition - 1;
+        if (settings.currentPosition) {
+            currentPosition = settings.currentPosition - 1;
         }
 
         console.log(currentPosition);
@@ -117,18 +116,18 @@ $(document).ready(function () {
         }
     }
 
-    Slider('.slider2', {
+    $('.slider2').simpleSlider({
         dots: true,
         // arrows: true
     });
 
-    Slider('.slider1', {
+    $('.slider1').simpleSlider({
         // dots: true,
         arrows: true,
         currentPosition: 2
     });
 
-    Slider('.slider3', {
+    $('.slider3').simpleSlider({
         dots: true,
         arrows: true
     });
