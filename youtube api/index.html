@@ -7,7 +7,7 @@
     <br>
     <button id="action">воспроизвести</button>
     <br>
-    <input type="text" id="link">
+    <input type="text" id="link" value="https://youtu.be/D9ioyEvdggk">
     <br>
     <button id="video">воспроизвести видео по ссылке</button>
     <script>
@@ -71,7 +71,12 @@
             }
         });
 
-
+        var video = document.getElementById('video');
+        var link = document.getElementById('link').value;
+        video.addEventListener('click', function(){
+            player.loadVideoById("D9ioyEvdggk", 5, "large")
+            player.playVideo();
+        })
     </script>
 </body>
 
