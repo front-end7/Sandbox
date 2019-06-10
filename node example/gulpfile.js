@@ -42,6 +42,12 @@ function scripts() {
 	return gulp.src(paths.scripts.src)
 	  .pipe(concat('script.min.js'))
 	  .pipe(gulp.dest(paths.scripts.dest));
+}
+
+function watch() {
+	gulp.watch(paths.scripts.src, scripts);
+	gulp.watch(paths.styles.src, styles);
+	gulp.watch(paths.html.src, html);
   }
 
 var build = gulp.series(gulp.parallel(styles, scripts, html));
@@ -51,3 +57,4 @@ exports.html = html;
 exports.scripts = scripts;
 
 exports.build = build;
+exports.watch = watch;
