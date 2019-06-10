@@ -1,4 +1,4 @@
-//@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
+import { $ } from "jquery";
 
 $(document).ready(function () {
     // js code goes here
