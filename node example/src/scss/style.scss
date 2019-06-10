@@ -1,0 +1,9 @@
+// import from npm
+@import '../../node_modules/normalize-scss/sass/normalize/import-now';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+// import from project
+@import 'utilities';
+@import 'bootstrap-grid';
+
+// import other blocks
