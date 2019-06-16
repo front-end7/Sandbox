@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <select v-model="selected">
+            <option v-for="currency in currencies" v-bind:value="currency.rate">{{ currency.txt }}</option>
+        </select>
+        <input type="text" v-model="value">
+        <input type="text" v-model="result" disabled>
+    </div>
+    
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+        $.ajax({
+            url: 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json'
+        }).done(function (result) {
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    currencies: result,
+                    selected: '',
+                    value: 0
+                },
+                computed: {
+                    result: function () {
+                    return this.selected * this.value;
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
