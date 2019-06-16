@@ -1,0 +1,8 @@
+// insert @font-face rules here
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham_medium_regular-webfont.woff2') format('woff2'),
+         url('../fonts/gotham_medium_regular-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+
+// TODO: include third-party styles
+
+@import "../blocks/common/page/page.scss";
+
+// TODO: include other block styles
+@import "../blocks/header/header.scss";
+@import "../blocks/nav/nav.scss";
+@import "../blocks/logo/logo.scss";
+@import "../blocks/social/social.scss";
+body {
+    background-color: grey;
+}

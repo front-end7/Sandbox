@@ -1,0 +1,12 @@
+//-
+    name: header
+    description: Markup for the header block
+    arguments:
+        - {object} props - block properties
+
+mixin header(data)
+    .header&attributes(attributes)
+        .container.header__container
+            +logo(data.logo).header__logo
+            +nav(data.nav).header__nav
+            +social(data.social).header__social

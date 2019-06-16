@@ -1,0 +1,19 @@
+//-
+    name: nav
+    description: Markup for the nav block
+    arguments:
+        - {object} props - block properties
+
+mixin nav(data)
+    .nav&attributes(attributes)
+        button.nav__burger
+            i.fas.fa-bars
+            i.fas.fa-times
+        ul.nav__list
+            each item in data
+                if item.active
+                    li.nav__item.nav__item--active
+                        a(href=item.link).nav__link= item.text
+                else
+                    li.nav__item
+                        a(href=item.link).nav__link= item.text

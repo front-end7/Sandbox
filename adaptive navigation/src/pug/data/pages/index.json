@@ -1,0 +1,39 @@
+{
+    "nav": [
+        {
+            "link": "javascript:void(0)",
+            "text": "About Us",
+            "active": true
+        },
+        {
+            "link": "javascript:void(0)",
+            "text": "Projects"
+        },
+        {
+            "link": "javascript:void(0)",
+            "text": "News"
+        },
+        {
+            "link": "javascript:void(0)",
+            "text": "contact"
+        }
+    ],
+    "social": [
+        {
+            "link": "https://www.facebook.com/",
+            "name": "facebook-f"
+        },
+        {
+            "link": "https://twitter.com/?lang=ru",
+            "name": "twitter"
+        },
+        {
+            "link": "https://www.instagram.com/?hl=ru",
+            "name": "instagram"
+        }
+    ],
+    "logo": {
+        "link": "index.html",
+        "img": "logo"
+    }
+}

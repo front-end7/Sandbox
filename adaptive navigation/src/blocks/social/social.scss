@@ -1,0 +1,60 @@
+/**
+ * Styles for the social block.
+ */
+.social {
+    // Selector styles
+    // TODO: add code
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        
+        @include breakpoint-down(md) {
+            justify-content: flex-end;
+            margin-right: 20px;
+        }
+        
+        @include breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    &__item {
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    &__link {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+
+        &:hover, &:active {
+            opacity: .82;
+        }
+    }
+}

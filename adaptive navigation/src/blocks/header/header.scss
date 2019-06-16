@@ -1,0 +1,63 @@
+/**
+ * Styles for the header block.
+ */
+.header {
+    // Selector styles
+    // TODO: add code
+    position: sticky;
+    top: 0;
+    padding: 50px 0;
+
+    // @media queries
+    // TODO: add code
+    @include breakpoint-down(md) {
+        padding: $gutter 0;
+    }
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__container {
+        @include container();
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        max-width: 240px;
+        flex-shrink: 0;
+
+        @include breakpoint-down(md) {
+            order: 1;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__nav {
+        flex-grow: 2;
+
+        @include breakpoint-down(md) {
+            order: 3;
+            flex-grow: 0;
+        }
+    }
+
+    &__social {
+
+        @include breakpoint-down(md) {
+            order: 2;
+            flex-grow: 1;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}

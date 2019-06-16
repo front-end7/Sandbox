@@ -1,0 +1,13 @@
+//-
+    name: social
+    description: Markup for the social block
+    arguments:
+        - {object} props - block properties
+
+mixin social(data)
+    .social&attributes(attributes)
+        ul.social__list
+            each item in data
+                li.social__item
+                    a(href=item.link).social__link
+                        i(class=`fa-${item.name}`).fab

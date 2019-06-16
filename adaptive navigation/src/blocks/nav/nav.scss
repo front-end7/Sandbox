@@ -1,0 +1,131 @@
+/**
+ * Styles for the nav block.
+ */
+.nav {
+    // Selector styles
+    // TODO: add code
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__burger {
+        display: none;
+        width: 42px;
+        height: 42px;
+        background: none;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        font-size: 42px;
+        color: $color-white;
+
+        &:hover, &:active {
+            opacity: .82;
+        }
+
+        .fa-times {
+            display: none;
+        }
+
+        @include breakpoint-down(md) {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+
+        @include breakpoint-down(sm) {
+            transform: translateY(-4px);
+        }
+
+    }
+
+    &__list {
+        align-items: center;
+        justify-content: center;
+        margin: 0 50px;
+
+        @include breakpoint-up(lg) {
+            display: flex !important;
+        }
+
+        @include breakpoint-down(md) {
+            display: none;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 90px;
+            background-color: $color-primary;
+            width: 100%;
+        }
+    }
+
+    &__item {
+        color: white;
+        flex-grow: 1;
+        text-align: center;
+
+        @include breakpoint-down(md) {
+            @include container();
+
+            display: block;
+            text-align: left;
+        }
+    }
+
+    &__item--active &__link:before {
+        background-color: $color-white;
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: currentColor;
+        text-decoration: none;
+        color: $color-white;
+        font-family: $font-family-gotham;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-transform: uppercase;
+
+        &:hover, &:active {
+            opacity: .82;
+        }
+        
+        @include breakpoint-down(md) {
+            padding: $gutter/2 $gutter;
+            margin: 0 (-$gutter);
+            display: flex;
+            justify-content: flex-start;
+
+            &:hover, &:active {
+                opacity: 1;
+                background-color: $color-white;
+                color: $color-primary;
+            }
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid currentColor;
+            margin-right: 13px;
+        }
+    }
+}
