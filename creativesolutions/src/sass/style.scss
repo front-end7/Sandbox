@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// TODO: include third-party styles
+
+@import "../blocks/common/page/page.scss";
+@import "../blocks/common/title/title.scss";
+
+// TODO: include other block styles
+@import "../blocks/about/about.scss";
+@import "../blocks/big-screen/big-screen.scss";
+@import "../blocks/btn/btn.scss";
+@import "../blocks/contact/contact.scss";
+@import "../blocks/footer/footer.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/input/input.scss";
+@import "../blocks/logo/logo.scss";
+@import "../blocks/nav/nav.scss";
+@import "../blocks/services/services.scss";
+@import "../blocks/team/team.scss";
+@import "../blocks/works/works.scss";
+@import "../blocks/social/social.scss";

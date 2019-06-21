@@ -1,0 +1,36 @@
+include ../../blocks/common/icon/icon.pug
+//- TODO: include common block templates
+include ../../blocks/common/title/title.pug
+include ../../blocks/about/about.pug
+include ../../blocks/big-screen/big-screen.pug
+include ../../blocks/btn/btn.pug
+include ../../blocks/contact/contact.pug
+include ../../blocks/footer/footer.pug
+include ../../blocks/header/header.pug
+include ../../blocks/input/input.pug
+include ../../blocks/logo/logo.pug
+include ../../blocks/nav/nav.pug
+include ../../blocks/services/services.pug
+include ../../blocks/team/team.pug
+include ../../blocks/works/works.pug
+include ../../blocks/social/social.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        if data.pageTitle
+            title #{data.pageTitle} | #{data.siteTitle}
+        else
+            title #{data.siteTitle} &#8211; #{data.siteTagline}
+
+        link(rel="stylesheet", href="css/style.css")
+    body.page
+        block page
+
+        block scripts
+            script(src="js/vendor.js")
+            script(src="js/main.js")

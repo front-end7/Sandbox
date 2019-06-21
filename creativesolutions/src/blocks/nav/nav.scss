@@ -1,0 +1,46 @@
+/**
+ * Styles for the nav block.
+ */
+.nav {
+    // Selector styles
+    // TODO: add code
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: $gutter*2;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-heading;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

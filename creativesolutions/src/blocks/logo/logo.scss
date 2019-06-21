@@ -1,0 +1,34 @@
+/**
+ * Styles for the logo block.
+ */
+.logo {
+    // Selector styles
+    // TODO: add code
+    width: 54px;
+    height: 72px;
+    fill: $color-white;
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+    &__link {
+        display: block;
+    }
+
+    &__icon {
+        max-width: 100%;
+        max-height: 100%;
+        height: 73px;
+    }
+}

@@ -1,0 +1,12 @@
+//-
+    name: header
+    description: Markup for the header block
+    arguments:
+        - {object} props - block properties
+
+mixin header(data = {})
+    header.header&attributes(attributes)
+        .container
+            .d-flex.justify-content-between.align-items-center
+                +logo(data.logo).header__logo
+                +nav(data.nav).header__nav

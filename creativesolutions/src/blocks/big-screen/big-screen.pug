@@ -1,0 +1,12 @@
+//-
+    name: big-screen
+    description: Markup for the big-screen block
+    arguments:
+        - {object} props - block properties
+
+mixin bigScreen(data = {})
+    .big-screen&attributes(attributes)
+        img(src=data.img, alt="", srcset="").big-screen__img
+        .container
+            h1.big-screen__title= data.title
+            p.big-screen__subtitle!= data.slogan

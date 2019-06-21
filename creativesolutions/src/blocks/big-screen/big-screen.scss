@@ -1,0 +1,46 @@
+/**
+ * Styles for the big-screen block.
+ */
+.big-screen {
+    // Selector styles
+    // TODO: add code
+    color: $color-white;
+    text-align: center;
+    
+    @include shadow();
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+
+    & > .container {
+        @include center();
+    }
+
+    &__title {
+        font-family: $font-family-proxima-nova;
+        font-size: $font-size-h1;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-size: $font-size-subtitle;
+        font-style: italic;
+    }
+
+    &__img {
+        display: block;
+    }
+}

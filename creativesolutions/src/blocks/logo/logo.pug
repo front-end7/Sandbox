@@ -1,0 +1,10 @@
+//-
+    name: logo
+    description: Markup for the logo block
+    arguments:
+        - {object} props - block properties
+
+mixin logo(data = {})
+    .logo&attributes(attributes)
+        a(href=data.link).logo__link
+            +icon(data.icon).logo__icon
