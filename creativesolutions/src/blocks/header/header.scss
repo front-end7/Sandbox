@@ -10,6 +10,7 @@
     left: 0;
     width: 100%;
     padding: $gutter * 2 + 5px 0;
+    transition: ease .3s background-color;
 
     // @media queries
     // TODO: add code
@@ -25,4 +26,7 @@
 
     // Bem modifiers
     // TODO: add code
+    &--scrolled {
+        background-color: $color-primary;
+    }
 }
