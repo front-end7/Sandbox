@@ -97,7 +97,7 @@
 }
 
 // add primary shadow
-@mixin shadow(){
+@mixin shadow($_opacity: $opacity){
     &:after {
         content: '';
         display: block;
@@ -107,7 +107,7 @@
         top: 0;
         left: 0;
         background-color: $color-primary;
-        opacity: $opacity;
+        opacity: $_opacity;
     }
 
     position: relative;

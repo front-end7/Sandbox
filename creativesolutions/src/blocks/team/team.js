@@ -34,6 +34,23 @@
  */
 function initBlock() {
     // TODO: add code here
+    $('.team__slider').slick({
+        arrows: true,
+        prevArrow: '.icon_arrowLeft',
+        nextArrow: '.icon_arrowRight',
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false
+                }
+            }
+        ],
+        slidesToShow: 3,
+        dots: false,
+        dotsClass: 'team__pagination',
+    });
     return true;
 }
 

@@ -6,3 +6,18 @@
 
 mixin services(data = {})
     .services&attributes(attributes)
+        .container
+            .row.no-gutters
+                .col-lg-4.col-12.order-lg-1
+                    .services__panel
+                        img(src=data.img, alt="").services__img
+                        +title(data).services__title
+                            blockquote.services__blockquote
+                                !=data.blockquote.text
+                                span.services__author= data.blockquote.author
+                .col-lg-8.col-12.order-lg-0.d-flex
+                    .row.no-gutters
+                        each item in data.services
+                            .col-md-6.col-12.services__service.d-flex.align-items-center.justify-content-center
+                                +title(item)
+

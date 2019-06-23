@@ -4,6 +4,8 @@
 .services {
     // Selector styles
     // TODO: add code
+    background-color: $color-white-darken-1;
+    
 
     // @media queries
     // TODO: add code
@@ -19,4 +21,38 @@
 
     // Bem modifiers
     // TODO: add code
+    &__panel {
+        position: relative;
+
+        @include shadow();
+    }
+
+    &__title {
+        position: absolute;
+        z-index: 1;
+
+        @include center();
+
+        top: 250px;
+        color: $color-white;
+    }
+
+    &__blockquote {
+        padding-top: 100px;
+        font-style: italic;
+    }
+
+    &__author {
+        font-style: normal;
+        font-weight: $font-weight-bold;
+        display: block;
+    }
+
+    &__service {
+        color: $color-black;
+
+        &:nth-child(3n+1) {
+            background-color: $color-white-darken-2;
+        }
+    }
 }

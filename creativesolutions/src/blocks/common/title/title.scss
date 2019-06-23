@@ -4,6 +4,9 @@
 .title {
     // Selector styles
     // TODO: add code
+    text-align: center;
+    color: currentColor;
+    fill: currentColor;
 
     // @media queries
     // TODO: add code
@@ -19,4 +22,27 @@
 
     // Bem modifiers
     // TODO: add code
+    &__icon {
+        fill: currentColor;
+
+        max-width: 62px;
+        max-height: 62px;
+    }
+
+    &__title {
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-title;
+        font-family: $font-family-proxima-nova;
+
+        &--small {
+            font-size: $font-size-heading;
+            font-family: $font-family-pt-sans;
+        }
+    }
+
+    &__description {
+        font-style: italic;
+    }
 }

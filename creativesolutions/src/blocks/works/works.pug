@@ -6,3 +6,16 @@
 
 mixin works(data = {})
     .works&attributes(attributes)
+        img(src=data.img, alt="").works__img
+        .container
+            +title(data).works__title
+            .position-relative.row
+                .position-static.offset-lg-2.col-lg-8.col-12
+                    +icon('arrowLeft').works__navigation.works__navigation--prev
+                    +icon('arrowRight').works__navigation.works__navigation--next
+                    .works__slider
+                        each item in data.slides
+                            .works__slide
+                                img(src=item, alt="").works__slideImg
+            .works__btn
+                +btn(data.btn, "light")

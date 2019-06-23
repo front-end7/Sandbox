@@ -4,6 +4,8 @@
 .about {
     // Selector styles
     // TODO: add code
+    padding: 120px 0;
+    background-color: $color-white-darken-1;
 
     // @media queries
     // TODO: add code
@@ -19,4 +21,45 @@
 
     // Bem modifiers
     // TODO: add code
+    &__panel {
+        position: relative;
+
+        @include shadow();
+    }
+
+    &__title {
+        position: absolute;
+        z-index: 1;
+
+        @include center();
+
+        top: 150px;
+        color: $color-white;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__content {
+        padding-top: 40px;
+        color: $color-black;
+    }
+
+    &__text {
+        margin: 1.4em 0;
+
+        b {
+            font-weight: $font-weight-bold;
+        }
+
+        i {
+            font-style: italic;
+        }
+    }
+    
+    &__btn {
+        text-align: center;
+        padding-top: 40px;
+    }
 }

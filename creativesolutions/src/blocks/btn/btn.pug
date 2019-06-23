@@ -4,5 +4,5 @@
     arguments:
         - {object} props - block properties
 
-mixin btn(data = {})
-    .btn&attributes(attributes)
+mixin btn(data = {}, mod)
+    a(href=data.link, class= mod ? `btn--${mod}` : '').btn&attributes(attributes)!= data.text

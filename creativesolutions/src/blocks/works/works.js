@@ -1,7 +1,7 @@
 /**
  * @file Implementation of the works block
  */
-
+import * as config from '../../js/vendor';
 // -------------------------- BEGIN MODULE VARIABLES --------------------------
 
 // TODO: add code here
@@ -34,6 +34,20 @@
  */
 function initBlock() {
     // TODO: add code here
+    
+    const init = config.sliderConfig;
+
+    init.name = "works";
+
+    const agrs = {
+        ...init,
+        dots: true,
+        dotsClass: 'works__pagination',
+    };
+
+    console.log(agrs)
+
+    $('.works__slider').slick(agrs);
     return true;
 }
 

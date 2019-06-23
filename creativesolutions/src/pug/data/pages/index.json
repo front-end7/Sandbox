@@ -29,5 +29,174 @@
         "img": "./img/bg-big-screen.jpg",
         "title": "CreativE DIGITAL Project",
         "slogan": "Duis mollis, est non commodo luctus,<br>nisi erat porttitor ligula, eget lacinia odio sem nec elit."
+    },
+    "aboutUs": {
+        "img": "./img/bg-about-title.jpg",
+        "icon": "aboutUs",
+        "title": "About Us",
+        "text": [
+            "Nullam quis risus eget urna <b>mollis ornare</b> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+            "<b>Morbi leo risus</b>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet <i>fermentum</i>. Sed posuere consectetur est at lobortis."
+        ],
+        "btn": {
+            "link": "javascript:alert('Привет, Андрей!')",
+            "text": "Learn More"
+        }
+    },
+    "services": {
+        "img": "./img/bg-our-services.jpg",
+        "icon": "services",
+        "title": "OUR SERVICES",
+        "blockquote": {
+            "text": "“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”",
+            "author": "- Borat -"
+        },
+        "services": [
+            {
+                "icon": "graphic",
+                "title": "GRAPHIC DESIGN",
+                "description": "Cras mattis consectetur<br>purus sit amet fermentum."
+            },
+            {
+                "icon": "web",
+                "title": "WEB DEVELOPMENT",
+                "description": "Cras mattis consectetur<br>purus sit amet fermentum."
+            },
+            {
+                "icon": "SEO",
+                "title": "SEO & MARKETING",
+                "description": "Cras mattis consectetur<br>purus sit amet fermentum."
+            },
+            {
+                "icon": "mobile",
+                "title": "MOBILE DEVELOPMENT",
+                "description": "Cras mattis consectetur<br>purus sit amet fermentum."
+            }
+        ]
+    },
+    "works": {
+        "icon": "works",
+        "title": "RECENT WORKS",
+        "img": "./img/bg-works.jpg",
+        "btn": {
+            "link": "javascript:void(0)",
+            "text": "View Gallery"
+        },
+        "slides": [
+            "./img/slide01.jpg",
+            "./img/slide01.jpg",
+            "./img/slide01.jpg",
+            "./img/slide01.jpg"
+        ]
+    },
+    "team": {
+        "icon": "team",
+        "title": "MEET OUR TEAM",
+        "slides": [
+            {
+                "img": "./img/worker01.jpg",
+                "name": "Miguel Obrien",
+                "position": "CEO & Founder",
+                "social": [
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "linkedin-in"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "facebook-f"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "twitter"
+                    }
+                ]
+            },
+            {
+                "img": "./img/worker02.jpg",
+                "name": "Jackie Carroll",
+                "position": "Art Director",
+                "social": [
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "behance"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "linkedin-in"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "facebook-f"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "twitter"
+                    }
+                ]
+            },
+            {
+                "img": "./img/worker03.jpg",
+                "name": "Ida Morrison",
+                "position": "Designer",
+                "social": [
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "behance"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "linkedin-in"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "facebook-f"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "twitter"
+                    }
+                ]
+            },
+            {
+                "img": "https://i.ytimg.com/vi/NKk6rGDpq6Y/hqdefault.jpg",
+                "name": "Котик",
+                "position": "Мурчик",
+                "social": [
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "behance"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "linkedin-in"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "facebook-f"
+                    },
+                    {
+                        "link": "javascript:void(0)",
+                        "name": "twitter"
+                    }
+                ]
+            }
+        ]
     }
 }

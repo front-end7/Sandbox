@@ -4,6 +4,12 @@
 .works {
     // Selector styles
     // TODO: add code
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    color: $color-white;
+
+    @include shadow(.95);
 
     // @media queries
     // TODO: add code
@@ -19,4 +25,86 @@
 
     // Bem modifiers
     // TODO: add code
+    &__img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+
+        @include center();
+    }
+
+    &__title {
+        padding-bottom: 65px;
+    }
+
+    &__navigation {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 38px;
+        fill: currentColor;
+        transition: ease .3s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: $opacity;
+        }
+
+        &--next {
+            right: 0;
+            transform: translateX(100%);
+        }
+
+        &--prev {
+            left: 0;
+            transform: translateX(-100%);
+        }
+    }
+
+    &__pagination {
+        text-align: center;
+        position: absolute;
+        bottom: -45px;
+        left: 0;
+        width: 100%;
+
+        & > li {
+            display: inline-block;
+            font-size: 0;
+            line-height: 0;
+            margin: 0 3px;
+
+            & > button {
+                padding: 0;
+                background: none;
+                border: $border-width-default $color-white $border-style-default;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                color: transparent;
+                outline: none !important;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: $opacity;
+                }
+            }
+
+            &.slick-active > button {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    &__slideImg {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__btn {
+        padding-top: 80px;
+        text-align: center;
+    }
 }

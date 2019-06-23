@@ -5,4 +5,8 @@
         - {object} props - block properties
 
 mixin social(data = {})
-    .social&attributes(attributes)
+    ul.social&attributes(attributes)
+        each item in data
+            li.social__item
+                a(href=item.link).social__link
+                    i(class= `fa-${item.name}`).fab

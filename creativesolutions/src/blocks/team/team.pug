@@ -6,3 +6,18 @@
 
 mixin team(data = {})
     .team&attributes(attributes)
+        .container
+            +title(data)
+            .team__wrapper
+                +icon('arrowLeft').team__navigation.team__navigation--prev
+                +icon('arrowRight').team__navigation.team__navigation--next
+                .team__slider
+                    each item in data.slides
+                        .team__employee
+                            .team__picture
+                                img(src=item.img, alt="").team__img
+                            .team__panel
+                                h3.team__name= item.name
+                                p.team__position= item.position
+                            .team__footer
+                                +social(item.social).team__social

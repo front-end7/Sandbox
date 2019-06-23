@@ -4,7 +4,15 @@
 .btn {
     // Selector styles
     // TODO: add code
-
+    font-family: $font-family-pt-sans;
+    font-size: $font-size-normal;
+    font-style: italic;
+    color: currentColor;
+    border: $border-width-default currentColor $border-style-default;
+    padding: 10px 50px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s ease;
     // @media queries
     // TODO: add code
 
@@ -19,4 +27,23 @@
 
     // Bem modifiers
     // TODO: add code
+    &--dark {
+        color: $color-black;
+        // background-color: $color-white;
+
+        &:hover {
+            background-color: $color-black;
+            color: $color-white;
+        }
+    }
+    
+    &--light {
+        color: $color-white;
+        // background-color: $color-white;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }
 }

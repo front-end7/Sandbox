@@ -6,3 +6,13 @@
 
 mixin title(data = {})
     .title&attributes(attributes)
+        +icon(data.icon).title__icon
+        if data.description
+            h3.title__title.title__title--small= data.title
+            p.title__description!= data.description
+            if block
+                block
+        else
+            h2.title__title= data.title
+            if block
+                block
