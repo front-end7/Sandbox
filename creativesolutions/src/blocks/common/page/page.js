@@ -6,6 +6,7 @@ import LazyLoader from '../../../js/utils/lazy-loader';
 import header from '../../header/header';
 import works from '../../works/works';
 import team from '../../team/team';
+import contact from '../../contact/contact';
 
 // TODO: import other blocks
 
@@ -88,6 +89,7 @@ function initBlock() {
     // TODO: initialize other blocks
     works.initBlock();
     team.initBlock();
+    contact.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();

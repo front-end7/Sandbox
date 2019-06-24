@@ -4,6 +4,10 @@
 .social {
     // Selector styles
     // TODO: add code
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
 
     // @media queries
     // TODO: add code
@@ -19,4 +23,18 @@
 
     // Bem modifiers
     // TODO: add code
+    &__item {
+        margin: 0 12px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        color: $color-primary;
+        border-radius: 50%;
+        background-color: $color-white-darken-1;
+    }
 }

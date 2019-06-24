@@ -37,15 +37,13 @@ function initBlock() {
     
     const init = config.sliderConfig;
 
-    init.name = "works";
-
     const agrs = {
         ...init,
         dots: true,
+        prevArrow: `.works__navigation--prev`,
+        nextArrow: `.works__navigation--next`,
         dotsClass: 'works__pagination',
     };
-
-    console.log(agrs)
 
     $('.works__slider').slick(agrs);
     return true;

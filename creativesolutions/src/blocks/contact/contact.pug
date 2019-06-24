@@ -6,3 +6,19 @@
 
 mixin contact(data = {})
     .contact&attributes(attributes)
+        .contact__map#map
+        .contact__toTop
+            +icon(data.toTop)
+        .contact__wrapper
+            .container
+                +title(data).contact__title
+            .contact__info
+                each item in data.info
+                    a(href= item.link).contact__action
+                        .contact__icon
+                            +icon(item.icon)
+                        .contact__text!= item.text
+            .container
+                .row
+                    .col-lg-9.col-12.m-a
+                        +form(data.form)

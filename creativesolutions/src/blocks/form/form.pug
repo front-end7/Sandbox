@@ -1,0 +1,27 @@
+//-
+    name: form
+    description: Markup for the form block
+    arguments:
+        - {object} props - block properties
+
+mixin form(data = {})
+    form(action="#", method="get").form&attributes(attributes)
+        .row
+            each item in data.input
+                .col-lg-6.col-md-6.col-12
+                    +input(item)
+            .col-12
+                +input(data.textarea)
+            .col-12
+                .form__submit
+                    input.btn.btn--submit(type="submit", value=data.submit)
+
+mixin input(data = {})
+    .form__controls
+        label.form__label(for=data.name)
+            = data.text
+            span.form__requiered *
+        if data.textarea
+            textarea.form__input.form__input--textarea(name= data.name)
+        else
+            input.form__input(type="text", name= data.name, id= data.name)

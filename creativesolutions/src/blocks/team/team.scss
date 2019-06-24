@@ -4,6 +4,9 @@
 .team {
     // Selector styles
     // TODO: add code
+    padding: 50px 0 100px;
+    background-color: $color-white-darken-1;
+    color: $color-black;
 
     // @media queries
     // TODO: add code
@@ -19,4 +22,88 @@
 
     // Bem modifiers
     // TODO: add code
+    &__wrapper {
+        position: relative;
+        margin: 0 (-$gutter);
+    }
+
+    &__title {
+        padding-bottom: 65px;
+    }
+
+    &__navigation {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 38px;
+        fill: currentColor;
+        transition: ease .3s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: $opacity;
+        }
+
+        &--next {
+            right: -60px;
+            transform: translateX(100%);
+        }
+
+        &--prev {
+            left: -60px;
+            transform: translateX(-100%);
+        }
+    }
+
+    &__employee {
+        text-align: center;
+        padding: 0 $gutter;
+    }
+
+    &__picture {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        border: 13px $border-style-default $color-white-darken-1;
+    }
+
+    &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%,-50%);
+        object-fit: cover;
+    }
+
+    &__panel {
+        padding-top: 150px;
+        padding-bottom: $gutter*3;
+        margin-top: -125px;
+        background-color: $color-absolute-white;
+    }
+
+    &__name {
+        color: $color-primary;
+        font-family: $font-family-proxima-nova;
+        font-size: $font-size-heading;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+    }
+
+    &__position {
+        color: $color-black;
+        font-size: $font-size-heading;
+        font-style: italic;
+    }
+
+    &__footer {
+        padding: 20px 0;
+        background-color: $color-primary;
+    }
 }

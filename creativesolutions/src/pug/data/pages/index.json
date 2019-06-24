@@ -104,7 +104,7 @@
                     },
                     {
                         "link": "javascript:void(0)",
-                        "name": "google-plus"
+                        "name": "google-plus-g"
                     },
                     {
                         "link": "javascript:void(0)",
@@ -131,7 +131,7 @@
                     },
                     {
                         "link": "javascript:void(0)",
-                        "name": "google-plus"
+                        "name": "google-plus-g"
                     },
                     {
                         "link": "javascript:void(0)",
@@ -158,7 +158,7 @@
                     },
                     {
                         "link": "javascript:void(0)",
-                        "name": "google-plus"
+                        "name": "google-plus-g"
                     },
                     {
                         "link": "javascript:void(0)",
@@ -185,7 +185,7 @@
                     },
                     {
                         "link": "javascript:void(0)",
-                        "name": "google-plus"
+                        "name": "google-plus-g"
                     },
                     {
                         "link": "javascript:void(0)",
@@ -198,5 +198,39 @@
                 ]
             }
         ]
+    },
+    "contact": {
+        "toTop": "arrowTop",
+        "title": "GET IN TOUCH",
+        "icon": "location",
+        "info": [
+            {
+                "icon": "address",
+                "text": "Ikan Piranha Atas 220C<br>Malang - East Java<br>Indonesia",
+                "link": "javascript:void(0)"
+            },
+            {
+                "icon": "mobile",
+                "text": "+380630444773",
+                "link": "tel:+380630444773"
+            }
+        ],
+        "form": {
+            "submit": "SEND MESSAGE",
+            "textarea": {
+                "text": "Your Message",
+                "name": "message"
+            },
+            "input": [
+                {
+                    "text": "Your Name",
+                    "name": "name"
+                },
+                {
+                    "text": "Your Email",
+                    "name": "email"
+                }
+            ]
+        }
     }
 }

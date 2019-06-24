@@ -11,8 +11,6 @@ window.$ = window.jQuery = jQuery;
 const sliderConfig = {
     arrows: true,
     dots: false,
-    prevArrow: () => `.${this.name}__navigation--prev`,
-    nextArrow: () => `.${this.name}__navigation--next`,
     slidesToScroll: 1,
     slidesToShow: 1,
     responsive: [
@@ -22,8 +20,7 @@ const sliderConfig = {
                 arrows: false
             }
         }
-    ],
-    name: ''
+    ]
 };
 
 export default {
@@ -33,18 +30,3 @@ export default {
 
 // Manually initialize third-party libraries
 svg4everybody();
-
-
-// const loadGoogleMapsApi = require('load-google-maps-api')
- 
-// loadGoogleMapsApi().then(function (googleMaps) {
-//   new googleMaps.Map(document.querySelector('.map'), {
-//     center: {
-//       lat: 40.7484405,
-//       lng: -73.9944191
-//     },
-//     zoom: 12
-//   })
-// }).catch(function (error) {
-//   console.error(error)
-// })
