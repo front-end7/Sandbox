@@ -1,0 +1,31 @@
+
+.beetroot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+}
+
+.animation {
+    stroke: #90d1ba;
+    stroke-width: 1px;
+    fill: #90d1ba;
+    stroke-dasharray: 255;
+    animation: 3s ease beetroot;
+}
+@keyframes beetroot {
+    0% {
+        stroke-dashoffset: 255;
+        fill: transparent;
+    }
+    50% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #90d1ba;
+    }
+}
