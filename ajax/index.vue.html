@@ -23,7 +23,7 @@
         $.ajax({
             url: 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json'
         }).done(function (result) {
-            var app = new Vue({
+            window.app = new Vue({
                 el: '#app',
                 data: {
                     currencies: result,
@@ -32,7 +32,7 @@
                 },
                 computed: {
                     result: function () {
-                    return this.selected * this.value;
+                        return this.selected * this.value;
                     }
                 }
             })
