@@ -7,6 +7,7 @@ import header from '../../header/header';
 import works from '../../works/works';
 import team from '../../team/team';
 import contact from '../../contact/contact';
+import nav from '../../nav/nav';
 
 // TODO: import other blocks
 
@@ -90,6 +91,7 @@ function initBlock() {
     works.initBlock();
     team.initBlock();
     contact.initBlock();
+    nav.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();

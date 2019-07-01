@@ -15,8 +15,8 @@ mixin services(data = {})
                             blockquote.services__blockquote
                                 !=data.blockquote.text
                                 span.services__author= data.blockquote.author
-                .col-lg-8.col-12.order-lg-0.d-flex
-                    .row.no-gutters
+                .col-lg-8.col-12.order-lg-0
+                    .row.no-gutters.h-100
                         each item in data.services
                             .col-md-6.col-12.services__service.d-flex.align-items-center.justify-content-center
                                 +title(item)

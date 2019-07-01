@@ -11,6 +11,10 @@
 
     @include shadow(.95);
 
+    @include breakpoint-down(md) {
+        padding: $gutter*4 0;
+    }
+
     // @media queries
     // TODO: add code
 
@@ -55,11 +59,25 @@
         &--next {
             right: 0;
             transform: translateX(100%);
+
+            @media screen and (max-width: 1400px){
+                right: 0;
+                transform: none;
+            }
         }
 
         &--prev {
             left: 0;
             transform: translateX(-100%);
+            
+            @media screen and (max-width: 1400px){
+                left: 0;
+                transform: none;
+            }
+        }
+
+        @include breakpoint-down(md) {
+            display: none !important;
         }
     }
 

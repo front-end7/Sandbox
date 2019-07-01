@@ -12,6 +12,9 @@
     padding: $gutter * 2 + 5px 0;
     transition: ease .3s background-color;
 
+    @include breakpoint-down(xs) {
+        padding: $gutter 0;
+    }
     // @media queries
     // TODO: add code
 
@@ -27,6 +30,7 @@
     // Bem modifiers
     // TODO: add code
     &--scrolled {
+        backdrop-filter: blur(5px);
         background-color: transparentize($color: $color-primary, $amount: 0.18);
     }
 }

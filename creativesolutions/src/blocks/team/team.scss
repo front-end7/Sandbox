@@ -8,6 +8,10 @@
     background-color: $color-white-darken-1;
     color: $color-black;
 
+    @include breakpoint-down(md) {
+        padding: $gutter*4 0;
+    }
+
     // @media queries
     // TODO: add code
 
@@ -25,6 +29,15 @@
     &__wrapper {
         position: relative;
         margin: 0 (-$gutter);
+
+        @media screen and (max-width: 1400px) {
+            margin: 0;
+            padding: 0 30px;
+        }
+
+        @include breakpoint-down(md) {
+            padding: 0;
+        }
     }
 
     &__title {
@@ -48,11 +61,63 @@
         &--next {
             right: -60px;
             transform: translateX(100%);
+
+            @media screen and (max-width: 1400px){
+                right: 0;
+                transform: none;
+            }
         }
 
         &--prev {
             left: -60px;
             transform: translateX(-100%);
+
+            @media screen and (max-width: 1400px){
+                left: 0;
+                transform: none;
+            }
+        }
+
+        @include breakpoint-down(md) {
+            display: none !important;
+        }
+    }
+
+    @include breakpoint-down(md) {
+
+        &__pagination {
+            text-align: center;
+            position: absolute;
+            bottom: -45px;
+            left: 0;
+            width: 100%;
+    
+            & > li {
+                display: inline-block;
+                font-size: 0;
+                line-height: 0;
+                margin: 0 3px;
+    
+                & > button {
+                    padding: 0;
+                    background: none;
+                    border: $border-width-default $color-black $border-style-default;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    color: transparent;
+                    outline: none !important;
+                    cursor: pointer;
+    
+                    &:hover {
+                        opacity: $opacity;
+                    }
+                }
+    
+                &.slick-active > button {
+                    background-color: $color-black;
+                }
+            }
         }
     }
 

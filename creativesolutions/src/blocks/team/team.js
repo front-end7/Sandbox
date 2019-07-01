@@ -48,6 +48,12 @@ function initBlock() {
         dotsClass: 'team__pagination',
         responsive: [
             {
+              breakpoint: 1199,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
               breakpoint: 991,
               settings: {
                 slidesToShow: 2,
@@ -55,9 +61,10 @@ function initBlock() {
               }
             },
             {
-              breakpoint: 479,
+              breakpoint: 767,
               settings: {
                 slidesToShow: 1,
+                dots: true
               }
             }
           ]

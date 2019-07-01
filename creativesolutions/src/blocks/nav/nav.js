@@ -34,6 +34,11 @@
  */
 function initBlock() {
     // TODO: add code here
+    $('.nav').on('click', '.nav__burger', function (event) {
+        $(event.target).find('.fa-bars').toggleClass('d-none');
+        $(event.target).find('.fa-times').toggleClass('d-none');
+        $('.nav__list').slideToggle();
+    });
     return true;
 }
 

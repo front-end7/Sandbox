@@ -9,7 +9,7 @@ mixin nav(data = {})
         button.nav__burger.d-lg-none
             i.fas.fa-bars
             i.fas.fa-times.d-none
-        ul.nav__list.d-none.d-lg-flex
+        ul.nav__list.d-lg-flex
             each item in data
                 li.nav__item
                     a(href=item.link).nav__link= item.text
