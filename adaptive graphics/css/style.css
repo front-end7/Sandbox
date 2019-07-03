@@ -1,0 +1,24 @@
+#app {
+    background-image: url(../img/main_bg.png);
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: white;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    #app {
+        background-image: url(../img/main_bg@2.png);
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio: 3) {
+    #app {
+        background-image: url(../img/main_bg@3.png);
+    }
+}

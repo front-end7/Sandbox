@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- <h1>hello world</h1> -->
+        <picture>
+            <source media="(max-resolution: 1dppx)" srcset="./img/main_bg.png">
+            <source media="(max-resolution: 2dppx)" srcset="./img/main_bg@2.png">
+            <source media="(max-resolution: 3dppx)" srcset="./img/main_bg@3.png">
+            <img src="img/main_bg.png" alt="">
+        </picture>
+        
+        <img src="img/main_bg.png" alt="" srcset="./img/main_bg@2.png 2x, ./img/main_bg@3.png 3x">
+    </div>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
