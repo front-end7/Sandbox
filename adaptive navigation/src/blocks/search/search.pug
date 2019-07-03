@@ -1,0 +1,12 @@
+//-
+    name: search
+    description: Markup for the search block
+    arguments:
+        - {object} props - block properties
+
+mixin search(data)
+    .search&attributes(attributes)
+        label(for="search").search__button
+            <i class="fas fa-search"></i>
+        input(type="checkbox", name="search")#search.search__checkbox
+        input(type="text", name="searchText")#searchText.search__input

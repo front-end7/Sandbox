@@ -1,0 +1,57 @@
+/**
+ * Styles for the search block.
+ */
+.search {
+    // Selector styles
+    // TODO: add code
+    display: flex;
+    flex-direction: row-reverse;
+    // min-width: 210px;
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__button {
+        flex-shrink: 0;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+
+        &:hover, &:active {
+            opacity: .82;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__input {
+        width: 0;
+        border: none;
+        background: none;
+        border-bottom: 1px solid white;
+        transition: .3s;
+    }
+
+    // &__checkbox:checked + &__input {
+    //     width: 100%;
+    // }
+}

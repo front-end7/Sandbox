@@ -4,6 +4,7 @@
 
 import LazyLoader from '../../../js/utils/lazy-loader';
 import nav from '../../nav/nav';
+import search from '../../search/search';
 
 // TODO: import other blocks
 
@@ -84,6 +85,7 @@ function initBlock() {
 
     // TODO: initialize other blocks
     nav.initBlock();
+    search.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();
